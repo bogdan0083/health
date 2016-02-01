@@ -1,0 +1,21 @@
+include partials/base
+include partials/head
+include partials/header
+include partials/index-content
+include partials/footer
+
++base
+	block head
+			title='Главная'
+			meta(name='description' content='')
+			meta(name='keywords' content='')
+			// build:css styles/main.css
+			link(href='styles/main.css' rel='stylesheet')
+			// endbuild
+
+			// build:js scripts/vendor/modernizr.js
+			script(src='/bower_components/modernizr/modernizr.js')
+			// endbuild
+	+header // header
+	+index-content // content
+	+footer // footer

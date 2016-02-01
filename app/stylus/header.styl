@@ -1,0 +1,57 @@
+.header {
+	height 66px
+	position fixed
+	background-color white
+	width 100%
+	left 0
+	top 0
+	z-index 10
+	box-shadow 1px 1px 3px 1px rgba(black, 0.4)
+	&__in {
+		width 772px
+		margin 0 auto
+		clearfix()
+		overflow hidden
+	}
+	&__logo {
+		sprite($logo)
+		display block
+		hide-text()
+		float left
+		margin-top 8px
+	}
+	&__nav {
+		float right
+	}
+	&__nav-list {
+	}
+	&__nav-item {
+		display inline-block
+	}
+	&__nav-link {
+		font-size 15px
+		color black
+		line-height 66px
+		height 66px
+		margin-left 20px
+		transition all 0.4s
+		&_green_underlined {
+			color #16a400
+			border-bottom 1px dashed #16a400
+			font-size 15px
+			transition all 0.4s
+			margin-left 20px
+			&:hover {
+				opacity 0.4
+			}
+		}
+		&:hover {
+			opacity 0.4
+		}
+	}
+}
+
+.logo {
+	&_dark {
+	}
+}

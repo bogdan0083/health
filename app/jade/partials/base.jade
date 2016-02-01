@@ -1,0 +1,21 @@
+include head
+
+mixin base()
+	doctype html
+	html(class="no-js" lang='ru')
+		+head
+		body
+
+			.layout-wrapper
+				block
+			.arrow-up
+		// build:js scripts/vendor.js
+		// bower:js
+		script(src="/bower_components/jquery/dist/jquery.js")
+		// endbower
+		// endbuild
+		// build:js scripts/main.js
+		script(src="scripts/wow.min.js")
+		script(src="scripts/slick.min.js")
+		script(src="scripts/main.js")
+		// endbuild

@@ -1,0 +1,46 @@
+
+.footer {
+	height 200px
+	background-color #d5d5d5
+	color black
+	padding-top 23px
+	font-size 18px
+	&__in {
+		width 772px
+		margin auto
+		clearfix()
+		
+	}
+	&__left {
+		float left
+		width 365px
+	}
+	&__logo {
+		sprite($logo_gray)
+		display block
+		hide-text()
+		margin-bottom 6px
+	}
+	&__policy {
+		text-decoration underline
+		color black
+		line-height 1.5
+	}
+	&__copyright {
+		line-height 1.1
+	}
+	&__right {
+		float right
+		margin-top 15px
+		text-align right
+	}
+	&__contact {
+		line-height 1.2
+		a {
+			color black
+			&:hover {
+				text-decoration underline
+			}
+		}
+	}
+}

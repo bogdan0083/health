@@ -1,0 +1,514 @@
+.promo {
+	height 488px
+	color white
+	background-image url('../images/promo-bg.jpg')
+	background-attachment fixed
+	background-repeat no-repeat
+	background-position center
+	background-size cover
+	margin-top 66px
+	position relative
+	padding-top 130px
+	&:after {
+		content ''
+		position absolute
+		width 100%
+		height 100%
+		left 0
+		top 0
+		background-color #4a4a4a
+		background-image background-image -webkit-linear-gradient(117deg, rgba(0, 0, 0, 0.34) 0%, transparent 100%)
+		background-image background-image -o-linear-gradient(117deg, rgba(0, 0, 0, 0.34) 0%, transparent 100%)
+		background-image background-image linear-gradient(207deg, rgba(0, 0, 0, 0.34) 0%, transparent 100%)
+		opacity 0.7
+	}
+	&__in {
+		width 772px
+		margin 0 auto
+	}
+	&__heading {
+		position relative
+		z-index 1
+		font-size 40px
+		width 720px
+		margin-bottom 22px
+		opacity 0
+		animation fadeInLeft 1.2s ease forwards
+		
+	}
+	&__subheading {
+		position relative
+		z-index 1
+		color #d6d6d6
+		hl()
+		font-size 30px
+		opacity 0
+		animation fadeInRight 1.2s ease forwards
+		animation-delay 0.5s
+	}
+}
+.learn-more {
+	height 208px
+	text-align center
+	padding-top 70px
+	&__wrap {
+		opacity 0
+		animation fadeInUp 1.2s ease forwards
+		animation-delay 0.9s
+	}
+	&__link {
+		color #044b02
+		font-size 20px
+		hm()
+		border-bottom 1px dashed #044b02
+		display inline-block
+		transition all 0.2s ease
+		&:hover {
+			transform translateY(-6px)
+		}
+	}
+	
+	span {
+		margin 0 20px
+	}
+	&__button {
+		background-color #15c34f
+		border-radius 10px
+		box-shadow 0 0 5.6px 0.4px rgba(0, 0, 0, 0.27)
+		display inline-block
+		height 54px
+		line-height 56px
+		color white
+		padding 0 15px
+		text-shadow 0.1px -2px 16px rgba(0, 0, 0, 0.53)
+		cursor pointer
+		transition all 0.2s ease
+		&:hover {
+			transform translateY(-6px)
+			box-shadow 0 0 5.6px 0.4px rgba(0, 0, 0, 0.37)
+		}
+	}
+}
+.accessible {
+	background-color #ededed
+	padding-top 76px
+	min-height 365px
+	&__in {
+		width 772px
+		margin auto
+		padding 0 20px 0 40px
+		clearfix()
+	}
+	&__photo {
+		float left
+		margin-right 20px
+		opacity 0
+		&_animated {
+			animation fadeInRight 1s ease forwards
+			animation-delay 1s
+		}
+	}
+	&__wrap {
+		margin-top 20px
+	}
+	&__heading {
+		color black
+		font-size 30px
+		margin-bottom 12px
+		opacity 0
+		&_animated {
+			animation fadeInDown 1s ease forwards
+		}
+		span {
+			color #15c34f
+		}
+	}
+	&__text {
+		color #6a6a6a
+		font-size 17px
+		line-height 1.06
+		margin-bottom 12px
+		opacity 0
+		&_animated {
+			animation fadeInDown 1s ease forwards
+			animation-delay 0.5s
+		}
+	}
+}
+.salary {
+	min-height 448px
+	padding-top 82px
+	&__in {
+		width 772px
+		margin auto
+		clearfix()
+		padding 0 
+	}
+	&__wrap {
+		float left
+		margin-right -40px
+	}
+	&__heading {
+		color black
+		font-size 30px
+		margin-bottom 20px
+		opacity 0
+		span {
+			color #13b248
+		}
+		&_animated {
+			animation fadeInDown 1s ease forwards
+		}
+	}
+	&__text {
+		line-height 1.15
+		opacity 0
+		&_animated {
+			animation fadeInDown 1s ease forwards
+			animation-delay 0.5s
+		}
+	}
+	&__button {
+		background-color #15c34f
+		border-radius 10px
+		box-shadow 0 0 5.6px 0.4px rgba(0, 0, 0, 0.27)
+		display inline-block
+		height 40px
+		line-height 40px
+		color white
+		padding 0 15px
+		text-shadow 0.1px -2px 16px rgba(0, 0, 0, 0.53)
+		cursor pointer
+		margin-top 18px
+		opacity 0
+		transition all 0.2s ease
+		&:hover {
+			transform translateY(-6px)
+		}
+		&_animated {
+			animation fadeIn 1s ease forwards
+			animation-delay 0.5s
+		}
+	}
+	&__image {
+		float right
+		display block
+		margin-top 20px
+		position relative
+		right -4px
+		opacity 0
+		&_animated {
+			animation fadeInLeft 1s ease forwards
+			animation-delay 1s
+		}
+	}
+}
+.care {
+	min-height 522px
+	background url('../images/working.jpg') no-repeat center / cover
+	color white
+	font-size 23px
+	padding-top 88px
+	text-align center
+	&__in {
+		width 772px
+		margin auto
+	}
+	&__heading {
+		margin-bottom 54px
+		font-size 30px
+		hm()
+		span {
+			color #1bd358
+		}
+		opacity 0
+		&_animated {
+			animation fadeInDown 1s ease forwards
+		}
+	}
+	&__text {
+		width 700px
+		margin 0 auto
+		padding-top 44px
+		position relative
+		&_animated:first-of-type {
+			animation fadeInDown 1s ease forwards
+			animation-delay 0.5s
+		}
+		&:first-of-type {
+			margin-bottom 62px
+			opacity 0
+			&:before {
+				content ''
+				position absolute
+				sprite($hat)
+				top 0
+				left 50%
+				margin-left -(@width / 2)
+			}
+		}
+		&_animated:last-of-type {
+			opacity 0
+			animation fadeInDown 1s ease forwards
+			animation-delay 1s
+		}
+		&:last-of-type {
+			&:before {
+				content ''
+				position absolute
+				sprite($graph)
+				top 0
+				left 50%
+				margin-left -(@width / 2)
+			}
+		}
+	}
+}
+.what-important {
+	min-height 546px
+	background url('../images/pcs.jpg') no-repeat center / cover
+	color black
+	padding-top 86px
+	text-align center
+	&__in {
+		width 772px
+		margin auto
+	}
+	&__heading {
+		font-size 30px
+		margin 0 auto 60px
+		width 520px
+		span {
+			color #13b148
+			hm()
+		}
+		opacity 0
+		&_animated {
+			animation fadeInDown 1s ease forwards
+		}
+	}
+	&__list {
+		float right
+		margin-right 85px
+	}
+	&__item {
+		padding-left 62px
+		width 520px
+		font-size 23px	
+		margin-bottom 20px
+		position relative
+		text-align left
+		&_animated:nth-child(1) {
+			opacity 0
+			animation fadeInDown 1s ease forwards
+			animation-delay 0.4s
+		}
+		
+		&_animated:nth-child(2) {
+			opacity 0
+			animation fadeInDown 1s ease forwards
+			animation-delay 0.8s
+		}
+		
+		&_animated:nth-child(3) {
+			opacity 0
+			animation fadeInDown 1s ease forwards
+			animation-delay 1.2s
+		}
+		&:nth-child(1):before {
+			content '1'
+			position absolute
+			color #14ba4b
+			width 43px
+			height 43px
+			border 2px solid #14ba4b
+			border-radius 50%
+			text-align center
+			padding-left 2px
+			left 0
+			line-height 43px
+		}
+		&:nth-child(2):before {
+			content '2'
+			position absolute
+			color #14ba4b
+			width 43px
+			height 43px
+			border 2px solid #14ba4b
+			border-radius 50%
+			text-align center
+			padding-left 2px
+			left 0
+			line-height 43px
+		}
+		&:nth-child(3):before {
+			content '3'
+			position absolute
+			color #14ba4b
+			width 43px
+			height 43px
+			border 2px solid #14ba4b
+			border-radius 50%
+			text-align center
+			padding-left 2px
+			left 0
+			line-height 43px
+		}
+	}
+	&__button {
+		clear both
+		display inline-block
+		text-align center
+		background-color #15c34f
+		border-radius 10px
+		box-shadow 0.1px -2px 0 rgba(0, 0, 0, 0.27)
+		display inline-block
+		height 40px
+		line-height 40px
+		color white
+		text-shadow 0.1px -2px 16px rgba(0, 0, 0, 0.53)
+		cursor pointer
+		margin-top 38px
+		font-size 18px
+		padding 0 15px
+		transition all 0.2s ease
+		opacity 0
+		&_animated {
+			animation fadeIn 1s ease forwards
+			animation-delay 1.6s
+		}
+		&:hover {
+			transform translateY(-6px)
+		}
+	}
+}
+.about {
+	padding-top 50px
+	text-align center
+	&__in {
+		width 772px
+		margin 0 auto
+	}
+	&__logo {
+		margin-bottom 26px
+		opacity 0
+		&_animated {
+			animation fadeIn 1s ease forwards
+		}
+	}
+	&__text {
+		line-height 1.5
+		color black
+		padding-bottom 45px
+		position relative
+		opacity 0
+		&_animated {
+			animation fadeIn 1s ease forwards
+			animation-delay 0.5s
+			&:after {
+				animation fadeInUp 1s ease forwards
+				animation-delay 1s
+			}
+		}
+		&:after {
+			content ''
+			opacity 0
+			position absolute
+			width 147px
+			height 10px
+			background-color #73e363
+			left 50%
+			bottom 4px
+			margin-left -(@width / 2)
+		}
+		strong {
+			hm()
+		}
+	}
+}
+.form-section {
+	padding-top 44px
+	padding-bottom 30px
+	color black
+	hl()
+	&__in {
+		width 772px
+		margin 0 auto
+		text-align center
+	}
+	&__heading {
+		width 450px
+		margin 0 auto
+		font-size 30px
+		margin-bottom 28px
+		span {
+			color #1ca209
+		}
+		opacity 0
+		&_animated {
+			animation fadeIn 1s ease forwards
+			animation-delay 1.2s
+		}
+		
+	}
+	&__info {
+		width 590px
+		margin 0 auto
+		color #656565
+		hl()
+		margin-top 32px
+		strong {
+			color #101010
+		}
+	}
+}
+.form {
+	opacity 0
+	&_animated {
+		animation fadeIn 1s ease forwards
+		animation-delay 1.8s
+	}
+	width 376px
+	margin 0 auto
+	input::placeholder {
+		color black
+	}
+	&__field {
+		width 100%
+		border 1px solid #bebebe
+		border-radius 10px
+		box-shadow inset 0 0 9px rgba(0, 0, 0, 0.3)
+		height 40px
+		text-align center
+		margin-bottom 22px
+		padding 0 20px
+		
+		&[name="name"] {
+			width 42%
+		}
+		&[name="surname"] {
+			width 56%
+		}
+		&[name="nationality"] {
+			width 58%
+		}
+		&[name="age"] {
+			width 40%
+		}
+	}
+	&__submit {
+		background-color #13b64a
+		border-radius 10px
+		box-shadow 0 0 6px rgba(113, 113, 113, 0.55)
+		color white
+		font-size 23px
+		border 0
+		height 50px
+		line-height 52px
+		width 100%
+		transition all 0.2s ease
+		&:hover {
+			transform translateY(-4px)
+		}
+	}
+}
